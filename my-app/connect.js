@@ -1,3 +1,3 @@
 let multiConnectAPI = {
-    jsonAPI: "yarn json-server .\api.json --port=3001 --host=localhost"
+    jsonAPI: "yarn json-server api.json --port=3001 --host=localhost"
 }

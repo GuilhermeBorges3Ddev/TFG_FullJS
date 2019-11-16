@@ -16,7 +16,7 @@ export function* fetchProdutos(action){
 
     yield put(actions.fetchProdutosStart());
     try{
-        let res= yield call(axios.get, (`http://local.json-server:3001/produtos?_sort=${options.orderBy}&_order=${options.sort}&_limit=${options.itemsPerPage}&_page=${options.actualPage}${brand}${search}${dateFrom}${dateTo}${status}`));
+        let res= yield call(axios.get, (`http://localhost:3001/produtos?_sort=${options.orderBy}&_order=${options.sort}&_limit=${options.itemsPerPage}&_page=${options.actualPage}${brand}${search}${dateFrom}${dateTo}${status}`));
 
         // let res= yield call(axios.get, (`http://192.168.50.32:3001/produtos?user_id=${userId}&_sort=${options.OrderBy}&_order=${options.Sort}&_limit=${options.ItemsPerPage}&_page=${options.ActualPage}${brand}${search}${dateFrom}${dateTo}`));
         yield put(actions.fetchProdutosSuccess(res,(action.reset || false)));

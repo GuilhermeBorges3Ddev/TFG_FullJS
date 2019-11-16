@@ -10,7 +10,7 @@ export default class Pedidos extends Component {
   }
   getOrders = async ()=>{
     // let orders= await axios.get('http://192.168.50.32:3001/pedidos?_limit=100&step=3&status.name_ne=Cancelado')
-    let orders= await axios.get('http://local.json-server:3001/pedidos?_limit=10')
+    let orders= await axios.get('http://localhost:3001/pedidos?_limit=10')
 
     this.setState({orders:orders.data})
   } 

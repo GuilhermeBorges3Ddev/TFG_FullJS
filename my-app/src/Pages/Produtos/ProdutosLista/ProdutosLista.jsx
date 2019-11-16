@@ -49,7 +49,7 @@ class ProdutosLista extends React.PureComponent{
                         <div className="spinner-border"/>
                         <span className="sr-only">Loading...</span>
                     </div>
-                    <div className="w-100 d-lg-none align-items-center  produtosPagiantionLabel text-center my-1">
+                    <div className="w-100 d-lg-none align-items-center  produtosPaginationLabel text-center my-1">
                         <span> <strong>{(this.props.itemsPerPage * this.props.actualPage < this.props.total) ?  (this.props.itemsPerPage * this.props.actualPage) : this.props.total  }</strong> de <strong> {this.props.total}</strong></span> 
                     </div>
                     <Desktop>
