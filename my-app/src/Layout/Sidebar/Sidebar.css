@@ -1,0 +1,99 @@
+.sidebar{
+	width: 16.4vw;
+	left:0;
+	position: fixed;
+	height: 100%;
+	transition: all 0.3s;
+	padding: 0 8px;
+	margin: none;
+	padding-top: 16px;
+	background-color: #014c74;
+	font-size: 1vw;
+	z-index: 2;
+	
+}
+.sidebar hr{
+	visibility: hidden;
+	margin:0 0;
+}
+
+.sideLogo{
+	width: 15vw;
+	max-width: 140px;
+}
+
+.sidebarStoreName {
+	font-size: 1vw;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 2.6vw;
+	height: 2.6vw;
+	background-color: #024369;
+	margin-bottom: 32px;
+	margin-top: 32px;
+}
+
+.sidebarTitle{
+	font-size: 1.2vw;
+	margin-top: calc(1vw - 0.2rem );
+	margin-bottom: 1vw
+}
+
+
+.homeLayout.collapsed .sidebar{
+	/* transform: translateX(-223px); */
+	margin-left: -223px;
+	padding:0;
+	padding-top: 16px;
+	
+}
+.sidebar .subMenu{
+	list-style: none;
+	padding-inline-start: 1.5em;
+}
+.sidebar .subMenu .mdi-icon{
+	height: 1.35em;
+	width: 1.35em;
+	margin-right: .675em;
+}
+.sidebar .subMenu a{
+	color:white;
+    border-radius: 24px;
+    padding-left: .675rem;
+}
+.sidebar .subMenu a:hover{
+	background-color: #024369;
+}
+.sidebar .subMenu a.active{
+	background-color: var(--deepDarkBlue);
+}
+
+
+
+
+
+@media(max-width:991px), (min-width:1367px){
+	.sidebar{
+		width: 223px;
+		font-size: 13px;
+	}
+	.sideLogo{
+		width:140px
+	}
+	.sidebarStoreName {
+		font-size: 13px;
+		border-radius: 20px;
+		line-height: 35px;
+		height: 35px;
+		margin-bottom: 32px;
+		margin-top: 32px;
+	}
+	
+	.sidebarTitle{
+		font-size: 14px;
+	}
+	
+}
+@media(max-width:991px){
+	
+}

@@ -1,0 +1,9 @@
+.vendasCard .orderId{
+    width:15.89vw
+}
+
+@media(min-width:1367px){
+    .vendasCard .orderId{
+        width:217px;
+    }
+}

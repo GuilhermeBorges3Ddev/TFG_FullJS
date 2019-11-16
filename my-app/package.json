@@ -1,0 +1,60 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.16.2",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.2.1",
+    "compression": "^1.7.3",
+    "date-fns": "2.0.0-alpha.27",
+    "font-awesome": "^4.7.0",
+    "json-server": "^0.14.2",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "mdi-react": "^5.3.0",
+    "node-sass-chokidar": "^1.3.4",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.8.4",
+    "react-dates": "^19.0.3",
+    "react-debounce-input": "^3.2.0",
+    "react-dom": "^16.8.4",
+    "react-input-mask": "^2.0.4",
+    "react-lines-ellipsis": "^0.14.1",
+    "react-media": "^1.9.2",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^3.0.1",
+    "reactstrap": "^7.1.0",
+    "recharts": "^1.5.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.1",
+    "simplebar-react": "^0.1.4",
+    "source-map-explorer": "^1.7.0",
+    "styled-components": "^4.2.0",
+    "yarn": "^1.16.0",
+    "yarn-install": "^1.0.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "serve": "node serve.js",
+    "analyze": "source-map-explorer build/static/js/*.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,60 @@
+.login .loginContainer{
+    border: 1px solid #dee2e621;
+    width:70vw;
+    min-width: 340px;
+    max-width: 700px;
+}
+.login{
+    overflow: hidden;
+    --mdc-theme-secondary:#ff4a05;
+    --mdc-theme-background:#ffffff;
+    background-image: url('../../img/background-banner.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y:top;
+    
+}
+.login .mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate) ~ .mdc-checkbox__background {
+    border-color: rgba(255, 255, 255, 0.54);
+    background-color: transparent;
+}
+.login label{
+    cursor: pointer;
+}
+.login p{
+    line-height: 1rem;
+
+}
+.login .loginInputContainer .mdi-icon{
+    position: absolute;
+    left: .375rem;
+    top: .375rem;
+    transition: all .15s ease-in-out;
+    color:hsla(17, 100%, 51%, 40%);
+}
+.login .loginInputContainer input:focus+.mdi-icon{
+    color:var(--vmaisOrange)
+}
+.login .loginInputContainer .form-control{
+    padding: 0.375rem 0.75rem 0.375rem calc(25px + .375rem);
+}
+.login .loginInputContainer .form-control:focus{
+    border-color: hsl(17, 100%, 75%);
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem hsla(17, 100%, 50%, 0.25);
+}
+
+.login .logoVmais{
+    background-image: url('../../img/vmais-novo-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1rem;
+}
+.login .loginButton{
+    color:white;
+    border-radius: 24px;
+    background-image: linear-gradient(200deg, var(--darkBlue), var(--vmaisOrange));
+    border:1px solid white;
+}
+/* background-image: url('../../img/background-banner.png'), */

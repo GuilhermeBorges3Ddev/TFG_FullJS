@@ -1,0 +1,62 @@
+.configuracoesInput .number-input input[type="number"] {
+    -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+            appearance: textfield;
+  }
+.configuracoesInput .number-input input[type=number]::-webkit-inner-spin-button,
+.configuracoesInput .number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+.configuracoesInput .number-input {
+    margin-bottom: 3rem;
+  }
+.configuracoesInput .number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+.configuracoesInput .number-input button:before,
+.configuracoesInput .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+.configuracoesInput .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+.configuracoesInput .number-input input[type=number] {
+    text-align: center;
+  }
+.configuracoesInput .number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+  }
+.configuracoesInput .number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+  }
+.configuracoesInput .number-input.number-input button.minus {
+    padding-left: 10px;
+  }
+.configuracoesInput .number-input.number-input button:before,
+.configuracoesInput .number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+  }
+.configuracoesInput .number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+  }

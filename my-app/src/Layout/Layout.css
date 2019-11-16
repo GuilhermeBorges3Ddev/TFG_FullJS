@@ -1,0 +1,64 @@
+.homeLayout{
+	display: flex;
+	
+}
+.homeLayout .layoutContentContainer{
+		position: fixed;
+		height: calc(100vh - 3.5vw);
+		top:3.5vw;
+		width: calc(83.6vw);
+		overflow-y: scroll;
+		overflow-x: hidden;
+		/* transform: translateX(); */
+		margin-left: 16.4vw;
+		z-index: 1;
+		
+}
+.layoutContent{
+	width: 100%;
+	transition: all 0.3s;
+	min-height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background: #e9ecef;
+	padding-bottom: 0;
+
+}
+.homeLayout.collapsed .layoutContentContainer{
+	width:calc(100vw);
+	/* transform: translateX(0); */
+	margin-right: 0;
+
+}
+.scrollbar-measure {
+	width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}
+
+@media(max-width:991px), (min-width:1367px){
+	.homeLayout .layoutContentContainer{
+		height: calc(100vh - 48px);
+		width: calc(100vw - 223px);
+		/* transform: translateX(223px);		 */
+		margin-left: 223px;
+		top: 48px
+	}
+}
+@media(max-width:991px){
+	.homeLayout .layoutContentContainer{
+		margin-left: 0px;
+		width: 100vw;
+	}
+}
+
+.homeLayout.navCollapsed .layoutContentContainer{
+	height: 100%;
+	top:0;
+	/* transform: translateY(-48px); */
+	/* margin-top:-48px; */
+
+}

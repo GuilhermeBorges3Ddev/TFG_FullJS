@@ -1,0 +1,97 @@
+.prodCard {
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+.prodCardMobile{
+    background-color:white;
+    font-size: 16px;
+    line-height: 16px;
+
+}
+
+
+/* div.prodCard.draft, tr.prodCard.draft td:first-child {
+    border-left: 3px solid #6c757d;
+}
+div.prodCard.inactive,tr.prodCard.inactive td:first-child {
+    border-left: 3px solid #aaaaaa;
+}
+div.prodCard.trashed, tr.prodCard.trashed td:first-child{
+    border-left: 3px solid #343a40;
+}
+div.prodCard.cataloguing, tr.prodCard.cataloguing td:first-child{
+    border-left: 3px solid #fec107;
+}
+div.prodCard.reproved, tr.prodCard.reproved td:first-child{
+    border-left: 3px solid #f36b7c;
+} */
+
+
+.prodCard.inactive .header:after, .prodCard.inactive .brand:after, .prodCard.inactive .tags:after, .prodCard.inactive .dateDisplay:after{
+    content: '';
+    background-color: #ffffff88;
+    top:0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
+.prodTitle{
+  
+    font-weight: 400;
+}
+.prodImg {
+    width: 2.9vw;
+    height: 2.9vw;
+    overflow: hidden;
+}
+.prodTitleDiv,  .prodTitleDiv .text-truncate{
+    width: 17vw;
+}
+
+.prodImgMobile{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius:8px;
+}
+.prodSubtitle {
+    font-size: 0.8vw;
+}
+.prodSubtitleMobile {
+    font-size: 16px;
+    
+}
+.produtoCardDateDiv{
+    
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-weight: 500;
+
+}
+@media(max-width:991px), (min-width:1367px){
+    
+    
+    .prodImg {
+        width: 40px;
+        height: 40px;
+    }
+    .prodTitleDiv,  .prodTitleDiv .text-truncate{
+        width: 270px;
+    }
+
+}
+@media(min-width:1367px){
+    .prodSubtitle{
+        font-size: 12px;
+    }
+}
+@media(max-width:438px){
+    .prodTitle{
+        max-width: 253px!important;
+    } 
+}

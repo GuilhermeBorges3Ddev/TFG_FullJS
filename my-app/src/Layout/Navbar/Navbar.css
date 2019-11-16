@@ -1,0 +1,219 @@
+.navbar{
+	color:#6c757d;
+	width: 83.6vw;
+	align-items: center;
+	display: flex;
+	height: 3.5vw;
+	/* transform: translateX(16.4vw); */
+	margin-left: 16.4vw;
+	
+	box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.05), 0px 4px 5px 0px rgba(0,0,0,0.05), 0px 1px 10px 0px rgba(0,0,0,0.05);
+	z-index: 2;
+	position: relative;
+	font-size:0.9vw;
+	background-color: white;
+}
+.navCurrentPageTitle{
+	font-size: 12px;
+	margin-left:5px;
+	display: none;
+	border-radius: 16px;
+	color:#0171ad;
+	align-items: center;
+	padding: 0 8px;
+	font-weight: bold;
+	box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+	cursor: pointer;
+}
+.navCurrentPageTitle:hover{
+background: rgba(0,0,0,0.2);
+}
+.homeLayout.collapsed .navCurrentPageTitle{
+	display: inline-flex;
+}
+
+.homeLayout .navbar .navCurrentPageTitle{
+	display: none;
+}
+.homeLayout.collapsed .navbar .navCurrentPageTitle{
+	display: block
+}
+.navbar .searchProdutosToolbar input{
+
+}
+.navbar .mdi-icon{
+	width: 1.75vw;
+	height: 1.75vw;
+}
+
+
+.sideTrigger{
+	padding: 7px;
+	border-radius: 18px;
+	height: 36px;
+	width:36px;
+	box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 0.3s
+
+}
+.sideTIcon{
+	height: 28px;
+	width:28px;
+	
+}
+.sideTLogo{
+	height: 28px;
+	width: 28px;
+	background:url('../../img/miniLogoVmais.png');
+	background-position: center;
+	background-size: cover;
+	transform: scale(0);
+}
+.sideTrigger:hover{
+ color:rgb(1, 76, 116);
+
+ background: rgba(0,0,0,0.2)
+}
+
+.navRing{
+	display: inline-block;
+	position: relative;
+}
+.navRingIcon{
+	height: 2vw;
+	width: 2vw;
+	
+}
+.navRingCounter{
+	color:white;
+	font-weight: bold;
+	position: absolute;
+	top:0;
+	right:0;
+	background-color: red;
+	border-radius: 50%;
+	line-height: 1.2vw;
+	height: 1.2vw;
+	width: 1.2vw;
+	font-size: 0.8vw;
+	text-align: center;
+}
+
+.navAvatarDiv{
+	width: 2.5vw;
+	height: 2.5vw;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.navAvatarImg{
+	width: 2.5vw;
+	height: 2.5vw;
+}
+
+.homeLayout.collapsed .navbar{
+	width:calc(100vw);
+	/* transform: translateX(0); */
+	margin-left: 0;
+	
+}
+.homeLayout.collapsed .navbar .sideTLogo{
+	transform: none;
+}
+.homeLayout.collapsed  .navbar .sideTrigger{
+	width: 76px;
+}
+.navbar .toolbarContainer .toolbar{
+	box-shadow: none;
+}
+.navbar .sideBackdropTrigger{
+	display: none;
+}
+@media(max-width:991px), (min-width:1367px){
+	
+	.navbar .searchProdutosToolbar input{
+		width: inherit;
+	}
+	.navbar .mdi-icon{
+		width: 24px;
+		height: 24px;
+	}
+	.navbar{
+		/* transform: translateX(0); */
+		width:calc(100vw);
+		width: calc(100vw - 223px);
+		height: 48px;
+		/* transform: translateX(223px); */
+		margin-left:223px;
+		font-size:13px;
+	}
+	.homeLayout.collapsed .navbar{
+		margin-left: 0px;
+	}
+	.navRingIcon{
+		height: 28px;
+		width: 28px;
+		
+	}
+	.navRingCounter{
+		line-height: 17px;
+		height: 17px;
+		width: 17px;
+		font-size: 11px;
+	}
+	.navAvatarDiv{
+		width: 34.2px;
+		height: 34.2px;
+	}
+	.navAvatarImg{
+		width: 34.2px;
+		height: 34.2px;
+	}
+}
+@media(max-width:991px){
+	.navbar{
+		position: fixed;
+	}
+	.navbar .toolbarContainer .toolbar{
+		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)
+	}
+	.homeLayout .navbar .navRight{
+		display: none;
+	}
+	.homeLayout.collapsed .navbar .navRight{
+		display: flex;
+	}
+	.navbar .toolbarContainer{
+		position: fixed;
+		top: 55px;
+		left: 0;
+		padding: 0 .75rem;
+		
+	}
+	.homeLayout.navCollapsed .toolbarContainer {
+		top:.5rem
+	}
+	.homeLayout:not(.navCollapsed) .layoutContent>div{
+		padding-bottom: calc( var(--navHeight) + .5rem);
+	}
+	.homeLayout .navbar .sideBackdropTrigger{
+		display: block;
+		position: fixed;
+		height: calc(100vh - 48px);
+		top:48px;
+		width: calc(100% - 223px);
+		left: 223px;
+		overflow: hidden;
+		
+	}
+	.homeLayout.collapsed .navbar .sideBackdropTrigger{
+		display: none;
+	}
+}
+.homeLayout.navCollapsed .navbar{
+	/* transform: translateY(-55px); */
+	margin-top: -47px;
+	box-shadow: none!important;
+} 

@@ -1,0 +1,41 @@
+input.inputName.mb-2.form-control,
+input.inputBorn.mb-2.form-control,
+input.inputEmail.mb-2.form-control,
+input.inputPhone.mb-2.form-control,
+input.inputOffice.mb-2.form-control,
+input.inputCPF.mb-2.form-control,
+input.inputCellPhone.mb-2.form-control {
+    padding: 0 !important;
+    box-shadow: 0 0 0 0;
+    border: none !important;
+    outline: none !important;
+    background: linear-gradient(to left, lightgray, lightgray) 1px calc(100% - 5px)/calc(100% - 10px) 2px no-repeat
+}
+
+.form-control.inputGender.mb-2{
+    padding: 0 !important;
+    box-shadow: 0 0 0 0;
+    border: none !important;
+    outline: none !important;
+    background: linear-gradient(to left, lightgray, lightgray) 2px calc(100% - 5px)/calc(100% - 10px) 2px no-repeat
+}
+
+/* Centralize modal */
+.modal {
+    text-align: center;
+  }
+
+@media screen and (min-width: 768px) { 
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }

@@ -1,0 +1,19 @@
+tr.lightDisplay{
+    font-weight: 300 !important;
+}
+
+.inputWork{
+    padding: 0 !important;
+    box-shadow: 0 0 0 0;
+    border: none !important;
+    outline: none !important;
+    background: -webkit-linear-gradient(right, lightgray, lightgray) 1px calc(100% - 5px)/calc(100% - 10px) 2px no-repeat;
+    background: linear-gradient(to left, lightgray, lightgray) 1px calc(100% - 5px)/calc(100% - 10px) 2px no-repeat;
+}
+
+.container-card{
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0;
+}

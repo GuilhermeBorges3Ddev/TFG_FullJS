@@ -1,0 +1,20 @@
+.img-thumbnail.perfil {
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+
+.perfil-title, .perfil-separator {
+    top: -50px;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .img-thumbnail.perfil {
+        border-radius: 50%;
+        position: relative;
+        top: -50px;
+        height: 150px !important;
+        width: 150px !important; 
+    } 
+}

@@ -1,0 +1,35 @@
+.navMenu .btnDropdown{
+    background-color: none !important;
+}
+.navMenu{
+    font-size: 1em
+}
+
+.navMenu.threeDots:hover{
+	background-color: #6c757d;
+	color:white;
+	box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+	border-radius: 16px 16px 16px 16px;
+}
+
+.navMenu.threeDots:hover::after{	
+    position: absolute;
+    color: white;
+    background-color: #6c757d;
+    right: 26px;
+    border-radius: 16px;
+    padding: 3px 6px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+}
+.navMenu .dropdown-item:active{
+    background-color: var(--pastelGray);
+}
+.navMenu a.active{
+    color:var(--darkBlue)!important;
+    font-weight: 700;
+    background-color: #f8f9fa
+}

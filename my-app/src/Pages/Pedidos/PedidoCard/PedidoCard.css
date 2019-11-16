@@ -1,0 +1,23 @@
+.pedidoCard {
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+.pedidoCard .remainingDays span{
+    min-width: 40px;
+}
+
+
+.pedidoCardMobile{
+    background-color:white;
+}
+
+@media(max-width:991px){
+    .pedidoCard .header{
+        line-height: 13px
+    }
+    .pedidoCard .dateDisplay .date{
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+}
